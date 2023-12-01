@@ -1,0 +1,773 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 60px; /* To avoid content being hidden behind the fixed music player */
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #006400; /* Dark green background */
+    color: #fff;
+    padding: 15px 0; /* Increased padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.website-title {
+    font-size: 30px; /* Increased size for the title */
+    font-weight: bold;
+    margin-left: 20px; /* Adjust spacing between logo and title */
+    color: white;
+    display: inline-block; /* Aligns title with logo */
+    vertical-align: middle; /* Center align with logo */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px; /* Adjusted padding for overall balance */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Aligns logo image and title */
+}
+
+    .logo img {
+        height: 100px; /* Increased logo size */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-links li {
+        margin-left: 25px; /* Increased spacing between navigation items */
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 15px;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+        .nav-links a:hover, .nav-links a:focus {
+            background-color: #004d33;
+            color: #f4f4f4;
+            border-radius: 5px;
+        }
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #cc8400;
+    }
+
+/* About Section Styles */
+.about {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Schedule Section Styles */
+.schedule-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.schedule-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.schedule-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: left;
+    min-width: 250px;
+}
+
+.day {
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.time-slot {
+    display: block; /* Each time slot on a new line */
+    margin-top: 10px;
+}
+
+/* Hover effect for schedule cards */
+.schedule-card:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow for emphasis */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-media-feeds {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between Facebook and Twitter */
+    margin-bottom: 20px; /* Spacing above the email */
+}
+
+.facebook-feed, .twitter-feed {
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact-email {
+    margin-top: 20px;
+    font-size: 30px; /* Larger font for email */
+}
+
+.email-link {
+    color: #006400;
+    text-decoration: underline;
+    font-weight: bold; /* Making the email address more prominent */
+}
+
+@media screen and (max-width: 768px) {
+    .social-media-feeds {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facebook-feed, .twitter-feed {
+        width: 100%; /* Adjust width for smaller screens */
+    }
+}
+
+.facebook-group-button {
+    display: inline-block;
+    background-color: #4267B2; /* Facebook color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+    .facebook-group-button:hover, .facebook-group-button:focus {
+        background-color: #365899; /* Darker Facebook color on hover */
+        transform: scale(1.05); /* Slightly enlarge on hover */
+    }
+
+
+/* Listen Live Section Styles */
+.listen-live-section {
+    background-color: #e6e6e6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.live-status {
+    margin-top: 20px;
+    font-size: 1.6em;
+}
+
+.live-icon {
+    color: grey; /* Default color */
+}
+
+    .live-icon.live {
+        color: red; /* Color when live */
+    }
+
+
+/* Image Links Section Styles */
+.image-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-link {
+    text-align: center;
+    flex-basis: 20%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+    .image-link img {
+        width: 100%;
+        height: auto;
+        max-width: 150px;
+        margin-bottom: 10px;
+        transition: opacity 0.3s ease; /* Smooth transition for image hover effect */
+    }
+
+    .image-link:hover img {
+        opacity: 0.8; /* Slightly transparent when hovered */
+    }
+
+    .image-link p {
+        margin: 0;
+        font-weight: bold;
+        transition: color 0.3s ease; /* Color transition for text */
+    }
+
+    .image-link:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Shadow effect for depth */
+    }
+
+        .image-link:hover p {
+            color: #006400; /* Change text color on hover */
+        }
+
+/* Music Player Styles */
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.player-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listen-now-text {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Radio Garden Section Styles */
+.radio-garden-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.radio-garden-btn {
+    background-color: #006400;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .radio-garden-btn:hover {
+        background-color: #004d33;
+    }
+
+/* Social Media Links Styles */
+.social-media a {
+    display: inline-block;
+    margin: 10px;
+    color: #006400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Donate Section Styles */
+.donate {
+    text-align: center;
+    margin: 20px 0;
+}
+
+    .donate img {
+        width: 250px;
+        height: 100px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .donate:hover, .donate:focus {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        outline: none; /* Removes the outline on focus */
+    }
+
+/* Footer Styles */
+footer {
+    background-color: #006400;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    footer a {
+        color: #ffa500;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+/* Generic styles for interactive sections */
+.interactive-section {
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 10px; /* Optional: for rounded corners */
+    margin: 20px 0; /* Spacing between sections */
+    padding: 20px; /* Padding inside sections */
+}
+
+    /* Hover effects for interactive sections */
+    .interactive-section:hover {
+        background-color: #b3d9b3; /* Light green background on hover */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* More pronounced shadow for depth */
+    }
+
+
+
+
+/* General Dark Mode Styles */
+body.dark-mode {
+    background-color: #333; /* Dark background for body */
+    color: #f4f4f4; /* Light text color for contrast */
+}
+
+.dark-mode header {
+    background-color: #555; /* Darker background for header */
+}
+
+.dark-mode .nav-links a {
+    color: #f4f4f4; /* Light color for navigation links */
+}
+
+.dark-mode .hero {
+    background-color: #555; /* Adjust as needed for hero section */
+    color: #f4f4f4; /* Light text color for hero section */
+}
+
+/* Dark mode styles for various sections */
+.dark-mode .about,
+.dark-mode .now-playing-section,
+.dark-mode .schedule-section,
+.dark-mode .contact-section,
+.dark-mode .listen-live-section {
+    background-color: #424242; /* Dark background for sections */
+    color: #f4f4f4; /* Light text color for sections */
+}
+
+    /* Specific dark mode styles for schedule cards and other elements */
+    .dark-mode .schedule-section .schedule-card,
+    .dark-mode .schedule-card .day,
+    .dark-mode .schedule-card .time-slot,
+    .dark-mode .image-links .image-link,
+    .dark-mode .image-link a,
+    .dark-mode .donate,
+    .dark-mode .music-player,
+    .dark-mode .external-links a,
+    .dark-mode .social-media a,
+    .dark-mode .contact-section a {
+        background-color: #424242; /* Consistent background for components */
+        color: #f4f4f4; /* Consistent text color */
+        border-color: #555; /* Border color for elements */
+    }
+
+/* Dark mode style for marquee text */
+.dark-mode .marquee p {
+    color: #f4f4f4; /* Light color for marquee text */
+}
+
+/* Dark mode styles for footer */
+.dark-mode footer {
+    background-color: #555; /* Dark background for footer */
+    color: #f4f4f4; /* Light text color for footer */
+}
+
+/* Dark Mode Toggle Button Styles */
+.dark-mode-toggle {
+    cursor: pointer;
+    background-color: whitesmoke; /* Light background for better visibility */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-left: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#dark-mode-button.dark-mode-active {
+    background-color: #006400; /* Green background when active */
+    color: white;
+}
+
+.now-playing-section {
+    position: fixed;
+    top: 250px; /* Adjust to align with the header height */
+    right: -280px; /* Start off-screen to the right */
+    width: 240px; /* Width of the sidebar */
+    height: calc(100% - 200px); /* Height adjusted to fit below the header */
+    background-color: #e6e6e6; /* Updated background color */
+    padding: 20px; /* Adjusted padding */
+    overflow-y: auto; /* Allows scrolling for overflow content */
+    transition: right 0.3s; /* Smooth transition for sliding in/out */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* New box shadow */
+    border-left: 5px solid #006400; /* New left border */
+    z-index: 999; /* Ensures it's above other content */
+}
+
+    .now-playing-section div {
+        font-size: 1em; /* Increased font size */
+        margin-bottom: 10px; /* Space between elements */
+    }
+
+    .now-playing-section b {
+        font-weight: bold; /* Bold label text */
+        color: #006400; /* Color for labels */
+    }
+
+
+
+
+/* Toggle Button Styles */
+.toggle-button {
+    position: fixed;
+    top: 210px; /* Position below the header */
+    right: 0;
+    background-color: green; /* Visible color for the button */
+    color: white; /* Text color */
+    border: none;
+    cursor: pointer; /* Cursor changes to pointer to indicate clickability */
+    padding: 10px 15px; /* Padding for size */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Accessibility Toggle Button Styles */
+#accessibility-toggle {
+    cursor: pointer; /* Cursor changes to pointer to indicate clickability */
+    background-color: whitesmoke; /* Background color for the button */
+    color: black; /* Text color */
+    border: none;
+    padding: 10px 20px; /* Padding for size */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+    margin-left: 10px; /* Margin for spacing */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition for interactive feedback */
+}
+
+    #accessibility-toggle:hover, #accessibility-toggle:focus {
+        background-color: green; /* Darker background on hover/focus */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Larger shadow on hover/focus */
+    }
+
+/* Accessibility Mode Styles */
+.accessibility-mode {
+    font-size: 18px; /* Increased font size for better readability */
+    color: #000; /* Text color */
+    background-color: #fff; /* Background color */
+}
+
+    .accessibility-mode a, .accessibility-mode button {
+        font-size: 18px; /* Increased font size for links and buttons */
+    }
+
+/* Marquee Styles */
+.marquee {
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Prevent wrapping of content */
+    background-color: #f4f4f4; /* Background color */
+    padding: 10px 0; /* Padding for size */
+    color: #333; /* Text color */
+}
+
+    .marquee p {
+        display: inline-block;
+        padding-left: 100%; /* Start offscreen to the right */
+        animation: marquee 20s linear infinite; /* Animation for continuous scroll */
+        font-weight: bold; /* Bold text for emphasis */
+    }
+
+/* Marquee Animation Keyframes */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Dark Mode Specific Styles for Marquee */
+.dark-mode .marquee {
+    background-color: #424242; /* Dark background in dark mode */
+    color: #f4f4f4; /* Light text color in dark mode */
+}
+
+/* Dark Mode Styles for Important News Section */
+body.dark-mode .important-news-section {
+    background-color: #424242; /* Dark background for dark mode */
+    color: #f4f4f4; /* Light text color for dark mode */
+}
+
+    body.dark-mode .important-news-section h2 {
+        color: #ffa500; /* Optionally, a different color for the heading */
+    }
+
+body.dark-mode .news-item {
+    background-color: #333; /* Darker background for each news item */
+    border-color: #555; /* Darker border color */
+}
+
+    body.dark-mode .news-item h3,
+    body.dark-mode .news-item p {
+        color: #f4f4f4; /* Light text color for content */
+    }
+
+/* Modal Background Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    z-index: 1; /* Ensure it's on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback background color */
+    background-color: rgba(0,0,0,0.4); /* Semi-transparent black background */
+}
+
+
+/* Modal Background Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed positioning */
+    z-index: 1; /* Ensures it's above other content */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0,0,0,0.6); /* Semi-transparent black */
+}
+
+/* Modal Content Box Styles */
+.modal-content {
+    background-color: #fefefe; /* White background */
+    margin: 10% auto; /* Centered and 10% from the top */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    width: 50%; /* Width of the box */
+}
+
+/* Close Button in Modal */
+.close-button {
+    color: #aaaaaa; /* Light grey color */
+    float: right; /* Positioned to the right */
+    font-size: 28px; /* Size of the button */
+    font-weight: bold; /* Bold text */
+}
+
+    .close-button:hover,
+    .close-button:focus {
+        color: #000; /* Darker color on hover/focus */
+        cursor: pointer; /* Change cursor to indicate clickability */
+    }
+
+/* Responsive Design for Navbar and Sections */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .nav-links li {
+            margin: 10px 0;
+        }
+
+    .schedule-cards, .image-links {
+        flex-direction: column;
+    }
+}
+
+/* General Button Styles */
+.button-style {
+    cursor: pointer; /* Indicates a clickable button */
+    background-color: whitesmoke; /* Light background color */
+    color: black; /* Text color */
+    border: none;
+    padding: 10px 20px; /* Padding for size */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Box shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transition for interactive effects */
+}
+
+    .button-style:hover {
+        background-color: #45a049; /* Darker green on hover */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Larger shadow on hover */
+    }
+
+    .button-style.active {
+        background-color: #006400; /* Active state color */
+        color: white; /* Text color for active state */
+    }
+
+/* Special Positioning for Toggle Button */
+.toggle-button {
+    position: fixed;
+    top: 210px; /* Adjust according to the layout */
+    right: 0;
+    z-index: 1000; /* Ensures it's above other content */
+}
+
+/* Request Song Button Styles */
+.Request-button {
+    display: inline-block; /* Align as inline block */
+    background-color: #006400; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background-color 0.2s, transform 0.2s; /* Smooth transitions for hover effects */
+}
+
+    .Request-button:hover, .Request-button:focus {
+        background-color: #004d33; /* Darker shade on hover/focus */
+        transform: scale(1.05); /* Slightly enlarge on hover/focus */
+        text-decoration: none; /* Ensure no underline on hover/focus */
+    }
+
+
+.feedback-button {
+    display: inline-block;
+    background-color: #006400; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.2s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+    .feedback-button:hover, .feedback-button:focus {
+        background-color: #004d33; /* Darker shade on hover/focus */
+        transform: scale(1.05); /* Slightly enlarge on hover/focus */
+    }
+
+/* Ensure the font size of feedback button matches the rest of the site */
+.feedback-button, .Request-button, .toggle-button, #accessibility-toggle, #dark-mode-button {
+    font-size: 1em;
+}
+
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    height: 50px; /* Adjust size as needed */
+    margin: 0 10px;
+}
+
+.important-news-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .important-news-section h2 {
+        text-align: center;
+        color: #006400;
+        margin-bottom: 15px;
+    }
+
+.news-content {
+    text-align: left;
+}
+
+.news-item {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+    .news-item h3 {
+        color: #006400;
+    }
+
+    .news-item p {
+        color: #333;
+        margin: 5px 0;
+    }

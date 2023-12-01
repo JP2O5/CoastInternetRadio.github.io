@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coast Internet Radio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with Navigation and Buttons -->
+    <header>
+        <div>
+            <button id="dark-mode-button" class="button-style">Enable Dark Mode</button>
+            <button id="accessibility-toggle" class="button-style">Accessibility</button>
+            <button id="text-to-speech-button" class="button-style">Text-to-Speech</button>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="C:\Users\Jamie\Documents\Radio\images\logo.png" alt="Coast Internet Radio Logo">
+                <span class="website-title">Coast Internet Radio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#listen">Listen Live</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Marquee for Station Slogan -->
+    <div class="marquee">
+        <p>--- Coast Internet Radio Playing Country And Irish Music 24 Hours A Day---</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero interactive-section">
+        <div class="hero-content">
+            <h1>Welcome to Coast Internet Radio</h1>
+            <p>Non Stop Country And Classic Hits From Ireland</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about interactive-section" id="about">
+        <h2>About Us</h2>
+        <p>Coast Internet Radio brings you the finest in Irish and American country music, directly from Newry, Ireland.</p>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule-section interactive-section">
+        <h2>Weekly Program Schedule with Jim Parr</h2>
+        <p>Enjoy the best in country music with Jim Parr, four days a week.</p>
+        <div class="schedule-cards">
+            <!-- Schedule Cards -->
+            <div class="schedule-card">
+                <span class="day">Monday</span>
+                <span class="time-slot">Morning Session: 08:00 - 10:00</span>
+                <span class="time-slot">Afternoon Session: 14:00 - 16:00</span>
+            </div>
+            <div class="schedule-card">
+                <span class="day">Wednesday</span>
+                <span class="time-slot">Morning Session: 08:00 - 10:00</span>
+                <span class="time-slot">Afternoon Session: 14:00 - 16:00</span>
+            </div>
+            <div class="schedule-card">
+                <span class="day">Friday</span>
+                <span class="time-slot">Morning Session: 08:00 - 10:00</span>
+                <span class="time-slot">Afternoon Session: 14:00 - 16:00</span>
+            </div>
+            <div class="schedule-card">
+                <span class="day">Saturday</span>
+                <span class="time-slot">Morning Session: 08:00 - 10:00</span>
+                <span class="time-slot">Afternoon Session: 14:00 - 16:00</span>
+            </div>
+        </div>
+        <div class="live-status">
+            <span id="live-icon" class="live-icon">&#9679;</span> <span id="live-text">Offline</span>
+        </div>
+    </section>
+
+
+    <!-- Listen Live Section -->
+    <section id="listen" class="listen-live-section interactive-section">
+        <h2>Listen Live</h2>
+        <p>Enjoy our live stream right here.</p>
+        <div class="music-player">
+            <div class="player-content">
+                <span class="listen-now-text">Listen Now:</span>
+                <audio controls>
+                    <source src="http://s20.whooshclouds.net:9128/live" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Links Section -->
+    <section class="image-links">
+        <!-- Image Link Cards -->
+        <div class="image-link">
+            <a href="http://streema.com/radios/play/Coast_Internet_Radio" target="_blank">
+                <img src="C:\Users\Jamie\Documents\Radio\images\Streema.png" alt="Listen on Streema">
+                <p>Listen on Streema</p>
+            </a>
+        </div>
+        <div class="image-link">
+            <a href="https://tunein.com/radio/Coast-internet-radio-(-C-I-R)-s224937/" target="_blank">
+                <img src="C:\Users\Jamie\Documents\Radio\images\Tunein.png" alt="Listen on TuneIn">
+                <p>Listen on TuneIn</p>
+            </a>
+        </div>
+        <div class="image-link">
+            <a href="https://ieradio.org/coast-internet-c-i-r/?fbclid=IwAR3AnEPDQZtOjpU4Co4uBCjHklqAlw967xUFeynLYCbBoyb9Eits5Xbqo-k" target="_blank">
+                <img src="C:\Users\Jamie\Documents\Radio\images\Ieradio.png" alt="Listen on Ieradio">
+                <p>Listen on Ieradio</p>
+            </a>
+        </div>
+        <div class="image-link">
+            <a href="https://radio.garden/listen/coast-internet-radio/qHxj8c7q" target="_blank">
+                <img src="C:\Users\Jamie\Documents\Radio\images\Radiogarden.png" alt="Listen on Radio Garden">
+                <p>Listen on Radio Garden</p>
+            </a>
+        </div>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfocCw2pYz1xZ5rFyl-jCUkoWUHKLvn0Eq4U4CAzhrrmMX8A/viewform?usp=sf_link" target="_blank" class="Request-button">Click Here To Request A Song</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section interactive-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us.</p>
+        <div class="social-media-feeds">
+            <!-- Facebook Feed -->
+            <div class="facebook-feed">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fcoastinternetradio&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="331" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowfullscreen="allowfullscreen" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <!-- Facebook Group Link -->
+            <div class="facebook-group-link">
+                <p>Join our community on Facebook:</p>
+                <a href="https://www.facebook.com/groups/128938680578425" target="_blank" class="facebook-group-button">Visit Our Facebook Group</a>
+            </div>
+            <!-- Twitter Feed -->
+            <div class="twitter-feed">
+                <a class="twitter-timeline" data-lang="en" data-width="331" data-height="340" data-theme="dark" href="https://twitter.com/coast_radio?ref_src=twsrc%5Etfw">Tweets by coast_radio</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        <!-- Email Link -->
+        <div class="contact-email">
+            <a href="mailto:coastradio@hotmail.com" class="email-link">coastradio@hotmail.com</a>
+        </div>
+    </section>
+
+    <!-- Now Playing Section -->
+    <button id="toggle-now-playing" class="toggle-button">
+        <span class="toggle-icon">➤</span>
+        <span class="toggle-button-text">What's Currently Playing (Not Functioning)</span>
+    </button>
+    <section id="now-playing" class="now-playing-section">
+        <div id="current-track">
+            <b>Now Playing:</b> <span style="color:#00FF00;">George Strait - I Saw God Today (03:13)</span>
+        </div>
+        <div id="upcoming-track">
+            <b>Coming Up Next:</b> <span style="color:#FF8000;">Daniel O' Donnell - The Way Dreams Are</span>
+        </div>
+        <div id="previously-played">
+            <b>Previously Played:</b>
+            <span style="color:#FF5050;">
+                Amber Digby - If You See My Baby<br>
+                Fatback and Biscuits Thomas Milligan<br>
+                John Farry - Waiting On The Lights To Change<br>
+                Tompall & The Glaser Brothers - Drinkin' Them Beers<br>
+                The Tremeloes - Suddenly You Love Me
+            </span>
+        </div>
+    </section>
+
+    <section id="important-news" class="important-news-section">
+        <h2>Important News</h2>
+        <div class="news-content">
+            <!-- Example news item -->
+            <div class="news-item">
+                <h3>Latest Update</h3>
+                <p>Date: January 1, 2023</p>
+                <p>We are back!</p>
+            </div>
+            <!-- Add more news items as needed -->
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="donate interactive-section">
+        <p>Do you want to donate to help keep the station running?</p>
+        <a href="http://www.paypal.com/donate?token=KLOpMYnJJqATdb4v0eoisbQOhZLwfy6urDextg_qsaue5JBgSfZVzZE-LsgL1RWwq-ZPbKMVYihZfU2r" target="_blank">
+            <img src="C:\Users\Jamie\Documents\Radio\images\paypal.png" alt="Donate with PayPal" />
+        </a>
+    </section>
+
+
+    <!-- Feedback Button -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQlmWMIVGHTgEIS84UObmoI0QsNKNZsiGfjTwnhGITFAWQcQ/viewform" target="_blank" class="feedback-button">Leave Feedback</a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logos">
+            <img src="C:\Users\Jamie\Documents\Radio\images\prs.png" alt="PRS for Music" class="footer-logo">
+            <img src="C:\Users\Jamie\Documents\Radio\images\ppl.png" alt="PPL for Music" class="footer-logo">
+        </div>
+        <p>© Coast Internet Radio 2023</p>
+    </footer>
+
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
